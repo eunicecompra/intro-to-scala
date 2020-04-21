@@ -36,8 +36,8 @@ object IntroExercises {
     *
     **/
   def add5(x: Int): Int = {
-    val f: Int => Int = ???
-    ???
+    val f: Int => Int = addCurried(x)
+    f(5)
   }
 
   /**
