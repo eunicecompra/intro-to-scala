@@ -18,7 +18,7 @@ object IntroExercises {
     * scala> add(1, 2)
     * = 3
     **/
-  def add(x: Int, y: Int): Int = ???
+  def add(x: Int, y: Int): Int = x + y
 
 
   /**
@@ -26,7 +26,7 @@ object IntroExercises {
     * scala> addCurried(1)(2)
     * = 3
     **/
-  def addCurried(x: Int)(y: Int): Int = ???
+  def addCurried(x: Int)(y: Int): Int = x + y
 
 
   /**
