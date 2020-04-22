@@ -92,11 +92,11 @@ object IntroExercises {
     *
     * https://docs.scala-lang.org/tour/tuples.html
     */
-  def first(pair: (String, Int)): String = ???
+  def first(pair: (String, Int)): String = pair._1
 
   /**
     * How can we extract the second element of a pair?
     */
-  def second(pair: (String, Int)): Int = ???
+  def second(pair: (String, Int)): Int = pair._2
 
 }
