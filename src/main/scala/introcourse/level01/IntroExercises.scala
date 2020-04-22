@@ -82,7 +82,7 @@ object IntroExercises {
     *
     * How can we group together `name` and `age` in a pair?
     */
-  def pair(name: String, age: Int): (String, Int) = ???
+  def pair(name: String, age: Int): (String, Int) = (name, age)
 
   /**
     * How can we extract the first element of a pair?
