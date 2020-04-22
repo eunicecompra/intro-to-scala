@@ -46,7 +46,9 @@ object IntroExercises {
     * How many ways can you implement this function?
     * Note: Square brackets (Types at compile time), round brackets (Values at run time)
     */
-  def foo[A](a: A): A = a
+  def foo[A](a: A): A = {
+    a
+  }
 
   /**
     * How about this one?

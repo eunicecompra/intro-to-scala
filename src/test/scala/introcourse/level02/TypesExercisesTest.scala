@@ -16,6 +16,14 @@ class TypesExercisesTest extends AnyFunSpec with TypeCheckedTripleEquals {
       assert(str === "Bob is 50 years old")
     }
 
+    it("should turn Sam into a String") {
+      val person = Person("Sam", 50)
+
+      val str = showPerson1(person)
+
+      assert(str === "Hello Sam!")
+    }
+
   }
 
   describe("showPerson2") {
@@ -89,11 +97,14 @@ class TypesExercisesTest extends AnyFunSpec with TypeCheckedTripleEquals {
     }
 
     it("should return a default on other inputs") {
-      ???
+      val str = showTrafficLightStr("purple")
+      assert(str === "Invalid traffic light")
     }
 
     it("should show flashing") {
-      ???
+      val str = showTrafficLightStr("flashing")
+
+      assert(str === "The traffic light is flashing")
     }
 
   }
@@ -119,7 +130,9 @@ class TypesExercisesTest extends AnyFunSpec with TypeCheckedTripleEquals {
     }
 
     it("should show Flashing") {
-      ???
+      val str = showTrafficLight(Flashing)
+
+      assert(str === "The traffic light is flashing")
     }
 
   }
